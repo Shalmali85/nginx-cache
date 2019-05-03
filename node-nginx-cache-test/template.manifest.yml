@@ -1,0 +1,9 @@
+---
+applications:
+  - name: node-nginx-cache-test
+    host: node-nginx-cache-test
+    memory: 128M
+    command: node ./server.js
+    buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+    env:
+      URI: https://nginx-cache-pcf.cfapps.io/notify
