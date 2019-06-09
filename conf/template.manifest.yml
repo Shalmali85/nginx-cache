@@ -3,3 +3,7 @@ applications:
   - name: nginx-cache-pcf
     host: nginx-cache-pcf
     buildpack: https://github.com/cloudfoundry/nginx-buildpack.git
+    
+    env:
+      UPSTREAM_URL: https://spring-cloud-test.cfapps.io;
+    
